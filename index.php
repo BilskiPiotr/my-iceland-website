@@ -24,6 +24,7 @@
 		</div>		
 	</div>
 	
+	<!-- taki bajer, sam nie wiem po co wstawiony -->
 	<div id="efect">
 		<div id="karta">
 			<div id="przod"></div>
