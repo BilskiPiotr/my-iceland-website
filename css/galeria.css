@@ -1,0 +1,564 @@
+ul
+{
+	border: 2px solid gold;
+}
+
+html { height: 100%; }
+
+.miniatura1,
+.miniatura2,
+.miniatura3,
+.miniatura4,
+.miniatura5,
+.miniatura6,
+.miniatura7,
+.miniatura8,
+.miniatura9,
+.miniatura10,
+.miniatura11,
+.miniatura12,
+.miniatura13,
+.miniatura14,
+.miniatura15,
+.miniatura16,
+.miniatura17
+{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding-top: 0px;
+	opacity: 0;
+	transition: all .5s ease-in-out;
+	
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px red;
+}
+
+.miniatura1
+{
+	background-image: url(../images/photos/200/200309a.jpg);
+}
+
+.miniatura2
+{
+	background-image: url(../images/photos/200/200309c.jpg);
+}
+
+.miniatura3
+{
+	background-image: url(../images/photos/200/200309d.jpg);
+}
+
+.miniatura4
+{
+	background-image: url(../images/photos/200/200409a.jpg);
+}
+
+.miniatura5
+{
+	background-image: url(../images/photos/200/200409d.jpg);
+}
+
+.miniatura6
+{
+	background-image: url(../images/photos/200/200509c.jpg);
+}
+
+.miniatura7
+{
+	background-image: url(../images/photos/200/200509d.jpg);
+}
+
+.miniatura8
+{
+	background-image: url(../images/photos/200/200509f.jpg);
+}
+
+.miniatura9
+{
+	background-image: url(../images/photos/200/200609a.jpg);
+}
+
+.miniatura10
+{
+	background-image: url(../images/photos/200/200609b.jpg);
+}
+
+.miniatura11
+{
+	background-image: url(../images/photos/200/200709a.jpg);
+}
+
+.miniatura12
+{
+	background-image: url(../images/photos/200/200709b.jpg);
+}
+
+.miniatura13
+{
+	background-image: url(../images/photos/200/200809c.jpg);
+}
+
+.miniatura14
+{
+	background-image: url(../images/photos/200/200809d.jpg);
+}
+
+.miniatura15
+{
+	background-image: url(../images/photos/200/200909a.jpg);
+}
+
+.miniatura16
+{
+	background-image: url(../images/photos/200/200909b.jpg);
+}
+
+.miniatura17
+{
+	background-image: url(../images/photos/200/2001009a.jpg);
+}
+
+body {
+    height:100%;
+    min-height: 100%;
+    background: #000000;
+    position:relative;
+}
+
+#content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+}
+
+.punkt1,
+.punkt2,
+.punkt3,
+.punkt4,
+.punkt5,
+.punkt6,
+.punkt7,
+.punkt8,
+.punkt9,
+.punkt10,
+.punkt11,
+.punkt12,
+.punkt13,
+.punkt14,
+.punkt15,
+.punkt16,
+.punkt17 {
+	position: absolute;
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background: #ff0000;
+	cursor: pointer;
+	box-shadow: 0 0 0 rgba(255,255,255, 0.8);
+	transition: all .5s ease-in-out;
+}
+
+
+.punkt1:hover,
+.punkt2:hover,
+.punkt3:hover,
+.punkt4:hover,
+.punkt5:hover,
+.punkt6:hover,
+.punkt7:hover,
+.punkt8:hover,
+.punkt9:hover,
+.punkt10:hover,
+.punkt11:hover,
+.punkt12:hover,
+.punkt13:hover,
+.punkt14:hover,
+.punkt15:hover,
+.punkt16:hover,
+.punkt17:hover
+{
+	border-radius: 0;
+	width: 199px;
+	height: 100px;
+	cursor: pointer;
+	animation: none;
+	z-index: 100;
+}
+
+
+.punkt1:hover .miniatura1,
+.punkt2:hover .miniatura2,
+.punkt3:hover .miniatura3,
+.punkt4:hover .miniatura4,
+.punkt5:hover .miniatura5,
+.punkt6:hover .miniatura6,
+.punkt7:hover .miniatura7,
+.punkt8:hover .miniatura8,
+.punkt9:hover .miniatura9,
+.punkt10:hover .miniatura10,
+.punkt11:hover .miniatura11,
+.punkt12:hover .miniatura12,
+.punkt13:hover .miniatura13,
+.punkt14:hover .miniatura14,
+.punkt15:hover .miniatura15,
+.punkt16:hover .miniatura16,
+.punkt17:hover .miniatura17
+{
+	padding-top: 90px;
+	opacity: 1;
+}
+
+
+@-webkit-keyframes pulse{
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.7);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.7);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.7);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+      box-shadow: 0 0 0 10px rgba(255,255,255, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+  }
+}
+
+
+.gallery {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 3%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+  background-color: black;
+}
+
+.gallery-content {
+	margin: 0;
+    background-color: #fefefe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+}
+
+/* Przycisk zamknięcia podglądu zdjęć */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.myPhoto {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+/* Przyciski przewijania do przodu i do tyłu */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: yellow;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Ustawienie przycisku przewijania w prawo - do prawej */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Ustawienie tła pod przyciakami przewijania po najechaniu myszką z przeźroczystością */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.active {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Parametry wyświetlania dla ekranów o rozdzielczości od 1100px do 1370px */
+@media screen and (min-width:1100px) and (max-width:1370px) 
+{
+#content {
+	background-image: url(../images/backgrounds/icemap700.png);
+	width: 700px;
+	height: 484px;
+	margin: -242px 0 0 -350px;
+}
+	
+.punkt1 {
+	top: 70%;
+	left: 28%;
+	animation: pulse 2s infinite;
+}
+
+.punkt2 {
+	top: 74%;
+	left: 32%;
+	animation: pulse 2.1s infinite;
+}
+
+.punkt3 {
+	top: 67%;
+	left: 40%;
+	animation: pulse 1.9s infinite;
+}
+
+.punkt4 {
+	top: 84%;
+	left: 42%;
+	animation: pulse 1.8s infinite;
+}
+
+.punkt5 {
+	top: 90%;
+	left: 49%;
+	animation: pulse 1.7s infinite;
+}
+
+.punkt6 {
+	top: 82%;
+	left: 57%;
+	animation: pulse 1.6s infinite;
+}
+.punkt7 {
+	top: 78%;
+	left: 62%;
+	animation: pulse 1.5s infinite;
+}
+.punkt8 {
+	top: 78%;
+	left: 68%;
+	animation: pulse 1.4s infinite;
+}
+.punkt9 {
+	top: 56%;
+	left: 87%;
+	animation: pulse 1.3s infinite;
+}
+.punkt10 {
+	top: 41%;
+	left: 89%;
+	animation: pulse 1.7s infinite;
+}
+.punkt11 {
+	top: 27%;
+	left: 71%;
+	animation: pulse 2.1s infinite;
+}
+.punkt12 {
+	top: 31%;
+	left: 66%;
+	animation: pulse 1.4s infinite;
+}
+.punkt13 {
+	top: 30%;
+	left: 62%;
+	animation: pulse 1.5s infinite;
+}
+.punkt14 {
+	top: 29%;
+	left: 56%;
+	animation: pulse 1.6s infinite;
+}
+.punkt15 {
+	top: 30%;
+	left: 46%;
+	animation: pulse 1.8s infinite;
+}
+.punkt16 {
+	top: 34%;
+	left: 37%;
+	animation: pulse 2.0s infinite;
+}
+.punkt17 {
+	top: 55%;
+	left: 33%;
+	animation: pulse 2.1s infinite;
+}
+
+.punkt1:hover {
+	top: 56%;
+	left: 10%;
+}
+
+.punkt2:hover {
+	top: 72%;
+	left: 16%;
+}
+
+.punkt3:hover {
+	top: 57%;
+	left: 26%;
+}
+
+.punkt4:hover {
+	top: 72%;
+	left: 30%;
+}
+
+.punkt5:hover {
+	top: 78%;
+	left: 35%;
+}
+
+.punkt6:hover {
+	top: 72%;
+	left: 42%;
+}
+
+.punkt7:hover {
+	top: 67%;
+	left: 49%;
+}
+
+.punkt8:hover {
+	top: 68%;
+	left: 54%;
+}
+
+.punkt9:hover {
+	top: 46%;
+	left: 72%;
+}
+
+.punkt10:hover {
+	top: 31%;
+	left: 75%;
+}
+
+.punkt11:hover {
+	top: 18%;
+	left: 58%;
+}
+
+.punkt12:hover {
+	top: 22%;
+	left: 53%;
+}
+
+.punkt13:hover {
+	top: 21%;
+	left: 49%;
+}
+
+.punkt14:hover {
+	top: 20%;
+	left: 43%;
+}
+
+.punkt15:hover {
+	top: 20%;
+	left: 32%;
+}
+
+.punkt16:hover {
+	top: 24%;
+	left: 23%;
+}
+
+.punkt17:hover {
+	top: 45%;
+	left: 19%;
+}
+	
+.gallery-content {
+	max-width: 800px;
+	transform: translate(-50%, -58%);
+}
+}
+
+@media screen and (min-width:1380px) and (max-width: 1900px) 
+{
+	.gallery-content
+	{
+		max-width: 1100px;
+		transform: translate(-50%, -58%);
+	}
+}
+
+@media screen and (min-width:1940px) and (max-width: 2400px) 
+{
+	.gallery-content
+	{
+		max-width: 1600px;
+		transform: translate(-50%, -58%);
+	}
+}
+
+@media screen and (min-width:2440px) and (max-width: 2900px) 
+{
+	.gallery-content
+	{
+		max-width: 2000px;
+		transform: translate(-50%, -58%);
+	}
+}
