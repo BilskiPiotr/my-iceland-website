@@ -354,6 +354,59 @@ img.hover-shadow {
 	margin: -242px 0 0 -350px;
 }
 	
+.gallery-content {
+	max-width: 800px;
+	transform: translate(-50%, -58%);
+}
+}
+
+@media screen and (min-width:1380px) and (max-width: 1900px) 
+{
+	#content {
+	background-image: url(../images/backgrounds/icemap950.png);
+	width: 950px;
+	height: 658px;
+	margin: -329px 0 0 -475px;
+}
+	
+	.gallery-content
+	{
+		max-width: 1100px;
+		transform: translate(-50%, -58%);
+	}
+}
+
+@media screen and (min-width:1910px) and (max-width: 2400px) 
+{
+	#content {
+	background-image: url(../images/backgrounds/icemap1100.png);
+	width: 1100px;
+	height: 762px;
+	margin: -381px 0 0 -550px;
+}
+	
+	.gallery-content
+	{
+		max-width: 1600px;
+		transform: translate(-50%, -58%);
+	}
+}
+
+@media screen and (min-width:2440px) and (max-width: 2900px) 
+{
+		#content {
+	background-image: url(../images/backgrounds/icemap1600.png);
+	width: 1600px;
+	height: 1108px;
+	margin: --554px 0 0 -800px;
+}
+	.gallery-content
+	{
+		max-width: 2000px;
+		transform: translate(-50%, -58%);
+	}
+}
+
 .punkt1 {
 	top: 70%;
 	left: 28%;
@@ -529,36 +582,4 @@ img.hover-shadow {
 	top: 45%;
 	left: 19%;
 }
-	
-.gallery-content {
-	max-width: 800px;
-	transform: translate(-50%, -58%);
-}
-}
 
-@media screen and (min-width:1380px) and (max-width: 1900px) 
-{
-	.gallery-content
-	{
-		max-width: 1100px;
-		transform: translate(-50%, -58%);
-	}
-}
-
-@media screen and (min-width:1940px) and (max-width: 2400px) 
-{
-	.gallery-content
-	{
-		max-width: 1600px;
-		transform: translate(-50%, -58%);
-	}
-}
-
-@media screen and (min-width:2440px) and (max-width: 2900px) 
-{
-	.gallery-content
-	{
-		max-width: 2000px;
-		transform: translate(-50%, -58%);
-	}
-}
